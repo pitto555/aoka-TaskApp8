@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		837BD2EB2619FBF1003B43DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837BD2EA2619FBF1003B43DA /* AppDelegate.swift */; };
+		837BD2ED2619FBF1003B43DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837BD2EC2619FBF1003B43DA /* SceneDelegate.swift */; };
+		837BD2EF2619FBF1003B43DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837BD2EE2619FBF1003B43DA /* ViewController.swift */; };
+		837BD2F22619FBF1003B43DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837BD2F02619FBF1003B43DA /* Main.storyboard */; };
+		837BD2F42619FBF1003B43DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837BD2F32619FBF1003B43DA /* Assets.xcassets */; };
+		837BD2F72619FBF1003B43DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837BD2F52619FBF1003B43DA /* LaunchScreen.storyboard */; };
+		837BD3022619FBF1003B43DA /* aoka_TaskApp8Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837BD3012619FBF1003B43DA /* aoka_TaskApp8Tests.swift */; };
+		837BD30D2619FBF1003B43DA /* aoka_TaskApp8UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837BD30C2619FBF1003B43DA /* aoka_TaskApp8UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		837BD2FE2619FBF1003B43DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 837BD2DF2619FBF1003B43DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 837BD2E62619FBF1003B43DA;
+			remoteInfo = "aoka-TaskApp8";
+		};
+		837BD3092619FBF1003B43DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 837BD2DF2619FBF1003B43DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 837BD2E62619FBF1003B43DA;
+			remoteInfo = "aoka-TaskApp8";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		837BD2E72619FBF1003B43DA /* aoka-TaskApp8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aoka-TaskApp8.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		837BD2EA2619FBF1003B43DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		837BD2EC2619FBF1003B43DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		837BD2EE2619FBF1003B43DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		837BD2F12619FBF1003B43DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		837BD2F32619FBF1003B43DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		837BD2F62619FBF1003B43DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		837BD2F82619FBF1003B43DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		837BD2FD2619FBF1003B43DA /* aoka-TaskApp8Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aoka-TaskApp8Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		837BD3012619FBF1003B43DA /* aoka_TaskApp8Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aoka_TaskApp8Tests.swift; sourceTree = "<group>"; };
+		837BD3032619FBF1003B43DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		837BD3082619FBF1003B43DA /* aoka-TaskApp8UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aoka-TaskApp8UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		837BD30C2619FBF1003B43DA /* aoka_TaskApp8UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aoka_TaskApp8UITests.swift; sourceTree = "<group>"; };
+		837BD30E2619FBF1003B43DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		837BD2E42619FBF1003B43DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837BD2FA2619FBF1003B43DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837BD3052619FBF1003B43DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		837BD2DE2619FBF1003B43DA = {
+			isa = PBXGroup;
+			children = (
+				837BD2E92619FBF1003B43DA /* aoka-TaskApp8 */,
+				837BD3002619FBF1003B43DA /* aoka-TaskApp8Tests */,
+				837BD30B2619FBF1003B43DA /* aoka-TaskApp8UITests */,
+				837BD2E82619FBF1003B43DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		837BD2E82619FBF1003B43DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				837BD2E72619FBF1003B43DA /* aoka-TaskApp8.app */,
+				837BD2FD2619FBF1003B43DA /* aoka-TaskApp8Tests.xctest */,
+				837BD3082619FBF1003B43DA /* aoka-TaskApp8UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		837BD2E92619FBF1003B43DA /* aoka-TaskApp8 */ = {
+			isa = PBXGroup;
+			children = (
+				837BD2EA2619FBF1003B43DA /* AppDelegate.swift */,
+				837BD2EC2619FBF1003B43DA /* SceneDelegate.swift */,
+				837BD2EE2619FBF1003B43DA /* ViewController.swift */,
+				837BD2F02619FBF1003B43DA /* Main.storyboard */,
+				837BD2F32619FBF1003B43DA /* Assets.xcassets */,
+				837BD2F52619FBF1003B43DA /* LaunchScreen.storyboard */,
+				837BD2F82619FBF1003B43DA /* Info.plist */,
+			);
+			path = "aoka-TaskApp8";
+			sourceTree = "<group>";
+		};
+		837BD3002619FBF1003B43DA /* aoka-TaskApp8Tests */ = {
+			isa = PBXGroup;
+			children = (
+				837BD3012619FBF1003B43DA /* aoka_TaskApp8Tests.swift */,
+				837BD3032619FBF1003B43DA /* Info.plist */,
+			);
+			path = "aoka-TaskApp8Tests";
+			sourceTree = "<group>";
+		};
+		837BD30B2619FBF1003B43DA /* aoka-TaskApp8UITests */ = {
+			isa = PBXGroup;
+			children = (
+				837BD30C2619FBF1003B43DA /* aoka_TaskApp8UITests.swift */,
+				837BD30E2619FBF1003B43DA /* Info.plist */,
+			);
+			path = "aoka-TaskApp8UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		837BD2E62619FBF1003B43DA /* aoka-TaskApp8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 837BD3112619FBF1003B43DA /* Build configuration list for PBXNativeTarget "aoka-TaskApp8" */;
+			buildPhases = (
+				837BD2E32619FBF1003B43DA /* Sources */,
+				837BD2E42619FBF1003B43DA /* Frameworks */,
+				837BD2E52619FBF1003B43DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "aoka-TaskApp8";
+			productName = "aoka-TaskApp8";
+			productReference = 837BD2E72619FBF1003B43DA /* aoka-TaskApp8.app */;
+			productType = "com.apple.product-type.application";
+		};
+		837BD2FC2619FBF1003B43DA /* aoka-TaskApp8Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 837BD3142619FBF1003B43DA /* Build configuration list for PBXNativeTarget "aoka-TaskApp8Tests" */;
+			buildPhases = (
+				837BD2F92619FBF1003B43DA /* Sources */,
+				837BD2FA2619FBF1003B43DA /* Frameworks */,
+				837BD2FB2619FBF1003B43DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				837BD2FF2619FBF1003B43DA /* PBXTargetDependency */,
+			);
+			name = "aoka-TaskApp8Tests";
+			productName = "aoka-TaskApp8Tests";
+			productReference = 837BD2FD2619FBF1003B43DA /* aoka-TaskApp8Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		837BD3072619FBF1003B43DA /* aoka-TaskApp8UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 837BD3172619FBF1003B43DA /* Build configuration list for PBXNativeTarget "aoka-TaskApp8UITests" */;
+			buildPhases = (
+				837BD3042619FBF1003B43DA /* Sources */,
+				837BD3052619FBF1003B43DA /* Frameworks */,
+				837BD3062619FBF1003B43DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				837BD30A2619FBF1003B43DA /* PBXTargetDependency */,
+			);
+			name = "aoka-TaskApp8UITests";
+			productName = "aoka-TaskApp8UITests";
+			productReference = 837BD3082619FBF1003B43DA /* aoka-TaskApp8UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		837BD2DF2619FBF1003B43DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					837BD2E62619FBF1003B43DA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					837BD2FC2619FBF1003B43DA = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 837BD2E62619FBF1003B43DA;
+					};
+					837BD3072619FBF1003B43DA = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 837BD2E62619FBF1003B43DA;
+					};
+				};
+			};
+			buildConfigurationList = 837BD2E22619FBF1003B43DA /* Build configuration list for PBXProject "aoka-TaskApp8" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 837BD2DE2619FBF1003B43DA;
+			productRefGroup = 837BD2E82619FBF1003B43DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				837BD2E62619FBF1003B43DA /* aoka-TaskApp8 */,
+				837BD2FC2619FBF1003B43DA /* aoka-TaskApp8Tests */,
+				837BD3072619FBF1003B43DA /* aoka-TaskApp8UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		837BD2E52619FBF1003B43DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				837BD2F72619FBF1003B43DA /* LaunchScreen.storyboard in Resources */,
+				837BD2F42619FBF1003B43DA /* Assets.xcassets in Resources */,
+				837BD2F22619FBF1003B43DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837BD2FB2619FBF1003B43DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837BD3062619FBF1003B43DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		837BD2E32619FBF1003B43DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				837BD2EF2619FBF1003B43DA /* ViewController.swift in Sources */,
+				837BD2EB2619FBF1003B43DA /* AppDelegate.swift in Sources */,
+				837BD2ED2619FBF1003B43DA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837BD2F92619FBF1003B43DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				837BD3022619FBF1003B43DA /* aoka_TaskApp8Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837BD3042619FBF1003B43DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				837BD30D2619FBF1003B43DA /* aoka_TaskApp8UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		837BD2FF2619FBF1003B43DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 837BD2E62619FBF1003B43DA /* aoka-TaskApp8 */;
+			targetProxy = 837BD2FE2619FBF1003B43DA /* PBXContainerItemProxy */;
+		};
+		837BD30A2619FBF1003B43DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 837BD2E62619FBF1003B43DA /* aoka-TaskApp8 */;
+			targetProxy = 837BD3092619FBF1003B43DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		837BD2F02619FBF1003B43DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				837BD2F12619FBF1003B43DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		837BD2F52619FBF1003B43DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				837BD2F62619FBF1003B43DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		837BD30F2619FBF1003B43DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		837BD3102619FBF1003B43DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		837BD3122619FBF1003B43DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "aoka-TaskApp8/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "koki.aoka-TaskApp8";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		837BD3132619FBF1003B43DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "aoka-TaskApp8/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "koki.aoka-TaskApp8";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		837BD3152619FBF1003B43DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "aoka-TaskApp8Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "koki.aoka-TaskApp8Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/aoka-TaskApp8.app/aoka-TaskApp8";
+			};
+			name = Debug;
+		};
+		837BD3162619FBF1003B43DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "aoka-TaskApp8Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "koki.aoka-TaskApp8Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/aoka-TaskApp8.app/aoka-TaskApp8";
+			};
+			name = Release;
+		};
+		837BD3182619FBF1003B43DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "aoka-TaskApp8UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "koki.aoka-TaskApp8UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "aoka-TaskApp8";
+			};
+			name = Debug;
+		};
+		837BD3192619FBF1003B43DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "aoka-TaskApp8UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "koki.aoka-TaskApp8UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "aoka-TaskApp8";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		837BD2E22619FBF1003B43DA /* Build configuration list for PBXProject "aoka-TaskApp8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				837BD30F2619FBF1003B43DA /* Debug */,
+				837BD3102619FBF1003B43DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		837BD3112619FBF1003B43DA /* Build configuration list for PBXNativeTarget "aoka-TaskApp8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				837BD3122619FBF1003B43DA /* Debug */,
+				837BD3132619FBF1003B43DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		837BD3142619FBF1003B43DA /* Build configuration list for PBXNativeTarget "aoka-TaskApp8Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				837BD3152619FBF1003B43DA /* Debug */,
+				837BD3162619FBF1003B43DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		837BD3172619FBF1003B43DA /* Build configuration list for PBXNativeTarget "aoka-TaskApp8UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				837BD3182619FBF1003B43DA /* Debug */,
+				837BD3192619FBF1003B43DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 837BD2DF2619FBF1003B43DA /* Project object */;
+}
