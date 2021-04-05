@@ -1,24 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B2q-DW-EJg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Tab Bar Controller-->
+        <scene sceneID="n1f-Pn-X8B">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tabBarController id="B2q-DW-EJg" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sZB-nD-qrR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="6iI-NX-XiU" kind="relationship" relationship="viewControllers" id="bID-9o-LGV"/>
+                        <segue destination="lbw-kb-HsV" kind="relationship" relationship="viewControllers" id="ag8-5x-ETV"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BXM-a1-fvr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-66" y="59"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="0Tx-pL-FiB">
+            <objects>
+                <viewController id="lbw-kb-HsV" customClass="GreenViewController" customModule="aoka_TaskApp8" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BMT-om-Zrr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="M01-wT-TF0">
+                                <rect key="frame" x="18" y="174.5" width="378" height="31"/>
+                                <connections>
+                                    <action selector="sliderAction:" destination="lbw-kb-HsV" eventType="valueChanged" id="5nt-lu-N4e"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fz7-yU-6sg">
+                                <rect key="frame" x="67" y="94" width="281" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Ev-ts-LT7"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="Fz7-yU-6sg" firstAttribute="leading" secondItem="9Ev-ts-LT7" secondAttribute="leading" constant="67" id="2NR-ZI-8BT"/>
+                            <constraint firstItem="M01-wT-TF0" firstAttribute="leading" secondItem="9Ev-ts-LT7" secondAttribute="leading" constant="20" id="Atp-qO-X5A"/>
+                            <constraint firstItem="9Ev-ts-LT7" firstAttribute="trailing" secondItem="Fz7-yU-6sg" secondAttribute="trailing" constant="66" id="JZN-bs-hMt"/>
+                            <constraint firstItem="9Ev-ts-LT7" firstAttribute="trailing" secondItem="M01-wT-TF0" secondAttribute="trailing" constant="20" id="KkX-i3-h7Y"/>
+                            <constraint firstItem="9Ev-ts-LT7" firstAttribute="bottom" secondItem="M01-wT-TF0" secondAttribute="bottom" constant="608.5" id="LRQ-dx-I0o"/>
+                            <constraint firstItem="Fz7-yU-6sg" firstAttribute="top" secondItem="9Ev-ts-LT7" secondAttribute="top" constant="50" id="M7v-k8-kOn"/>
+                            <constraint firstItem="M01-wT-TF0" firstAttribute="top" secondItem="Fz7-yU-6sg" secondAttribute="bottom" constant="60" id="d75-TH-XZR"/>
+                            <constraint firstItem="M01-wT-TF0" firstAttribute="top" secondItem="Fz7-yU-6sg" secondAttribute="bottom" constant="60" id="se4-wT-E6M"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="GhE-yU-1l6"/>
+                    <connections>
+                        <outlet property="calcLabel" destination="Fz7-yU-6sg" id="T9s-W3-zT3"/>
+                        <outlet property="slider" destination="M01-wT-TF0" id="JgO-Du-BUH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c94-4g-6pA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="779.71014492753625" y="594.64285714285711"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="OMh-TN-JKp">
+            <objects>
+                <viewController id="6iI-NX-XiU" customClass="RedViewController" customModule="aoka_TaskApp8" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fFA-57-YqO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Fcs-pS-C31">
+                                <rect key="frame" x="18" y="174.5" width="378" height="31"/>
+                                <connections>
+                                    <action selector="sliderAction:" destination="6iI-NX-XiU" eventType="valueChanged" id="GUi-Dj-wit"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZg-Ff-nfg">
+                                <rect key="frame" x="67" y="94" width="281" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iSo-az-RWx"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstItem="iSo-az-RWx" firstAttribute="trailing" secondItem="Fcs-pS-C31" secondAttribute="trailing" constant="20" id="GJ5-t6-ti9"/>
+                            <constraint firstItem="Fcs-pS-C31" firstAttribute="leading" secondItem="iSo-az-RWx" secondAttribute="leading" constant="20" id="Ht7-9L-tQF"/>
+                            <constraint firstItem="iSo-az-RWx" firstAttribute="bottom" secondItem="Fcs-pS-C31" secondAttribute="bottom" constant="608.5" id="I5g-8E-tc5"/>
+                            <constraint firstItem="dZg-Ff-nfg" firstAttribute="top" secondItem="iSo-az-RWx" secondAttribute="top" constant="50" id="LxD-g4-4AF"/>
+                            <constraint firstItem="dZg-Ff-nfg" firstAttribute="leading" secondItem="iSo-az-RWx" secondAttribute="leading" constant="67" id="MxL-si-1XE"/>
+                            <constraint firstItem="Fcs-pS-C31" firstAttribute="top" secondItem="dZg-Ff-nfg" secondAttribute="bottom" constant="60" id="bFF-Jc-JnT"/>
+                            <constraint firstItem="iSo-az-RWx" firstAttribute="trailing" secondItem="dZg-Ff-nfg" secondAttribute="trailing" constant="66" id="cMV-Yz-Y6b"/>
+                            <constraint firstItem="Fcs-pS-C31" firstAttribute="top" secondItem="dZg-Ff-nfg" secondAttribute="bottom" constant="60" id="stY-yA-SRr"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Whn-Dr-Ivq"/>
+                    <connections>
+                        <outlet property="calcLabel" destination="dZg-Ff-nfg" id="z1m-q0-YD5"/>
+                        <outlet property="slider" destination="Fcs-pS-C31" id="8GH-yp-fK3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rIV-qu-uPz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="779.71014492753625" y="-104.46428571428571"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

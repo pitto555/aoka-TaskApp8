@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		837BD2EB2619FBF1003B43DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837BD2EA2619FBF1003B43DA /* AppDelegate.swift */; };
 		837BD2ED2619FBF1003B43DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837BD2EC2619FBF1003B43DA /* SceneDelegate.swift */; };
-		837BD2EF2619FBF1003B43DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837BD2EE2619FBF1003B43DA /* ViewController.swift */; };
 		837BD2F22619FBF1003B43DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837BD2F02619FBF1003B43DA /* Main.storyboard */; };
 		837BD2F42619FBF1003B43DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837BD2F32619FBF1003B43DA /* Assets.xcassets */; };
 		837BD2F72619FBF1003B43DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837BD2F52619FBF1003B43DA /* LaunchScreen.storyboard */; };
 		837BD3022619FBF1003B43DA /* aoka_TaskApp8Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837BD3012619FBF1003B43DA /* aoka_TaskApp8Tests.swift */; };
 		837BD30D2619FBF1003B43DA /* aoka_TaskApp8UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837BD30C2619FBF1003B43DA /* aoka_TaskApp8UITests.swift */; };
+		837BD31E261A044E003B43DA /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837BD31D261A044E003B43DA /* RedViewController.swift */; };
+		837BD323261A045F003B43DA /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837BD322261A045F003B43DA /* GreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,6 @@
 		837BD2E72619FBF1003B43DA /* aoka-TaskApp8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "aoka-TaskApp8.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		837BD2EA2619FBF1003B43DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		837BD2EC2619FBF1003B43DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		837BD2EE2619FBF1003B43DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		837BD2F12619FBF1003B43DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		837BD2F32619FBF1003B43DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		837BD2F62619FBF1003B43DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		837BD3082619FBF1003B43DA /* aoka-TaskApp8UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "aoka-TaskApp8UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		837BD30C2619FBF1003B43DA /* aoka_TaskApp8UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aoka_TaskApp8UITests.swift; sourceTree = "<group>"; };
 		837BD30E2619FBF1003B43DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		837BD31D261A044E003B43DA /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
+		837BD322261A045F003B43DA /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +103,9 @@
 			children = (
 				837BD2EA2619FBF1003B43DA /* AppDelegate.swift */,
 				837BD2EC2619FBF1003B43DA /* SceneDelegate.swift */,
-				837BD2EE2619FBF1003B43DA /* ViewController.swift */,
 				837BD2F02619FBF1003B43DA /* Main.storyboard */,
+				837BD31D261A044E003B43DA /* RedViewController.swift */,
+				837BD322261A045F003B43DA /* GreenViewController.swift */,
 				837BD2F32619FBF1003B43DA /* Assets.xcassets */,
 				837BD2F52619FBF1003B43DA /* LaunchScreen.storyboard */,
 				837BD2F82619FBF1003B43DA /* Info.plist */,
@@ -258,9 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				837BD2EF2619FBF1003B43DA /* ViewController.swift in Sources */,
+				837BD31E261A044E003B43DA /* RedViewController.swift in Sources */,
 				837BD2EB2619FBF1003B43DA /* AppDelegate.swift in Sources */,
 				837BD2ED2619FBF1003B43DA /* SceneDelegate.swift in Sources */,
+				837BD323261A045F003B43DA /* GreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
