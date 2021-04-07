@@ -13,25 +13,27 @@ class GreenViewController: UIViewController {
     
     @IBOutlet private weak var slider: UISlider!
     
+    private var appDelegate: AppDelegate? {
+        UIApplication.shared.delegate as? AppDelegate
+    }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        if let delegate = UIApplication.shared.delegate as? AppDelegate {
-            
-            let sliderValue = delegate.count
-            
-            calcLabel.text = String(format: "%.6f", sliderValue)
-            slider.value = sliderValue
+
+        if let delegate = appDelegate {
+            updateCalcLabel(value: delegate.count)
+            slider.value = delegate.count
         }
     }
-    
+
     @IBAction func sliderAction(_ sender: UISlider) {
-        if let delegate = UIApplication.shared.delegate as? AppDelegate {
-            
-            let sliderValue = slider.value
-            
-            calcLabel.text = String(format: "%6f", sliderValue)
-            delegate.count = sliderValue
+        if let delegate = appDelegate {
+            updateCalcLabel(value: slider.value)
+            delegate.count = slider.value
         }
+    }
+
+    private func updateCalcLabel(value: Float) {
+        calcLabel.text = String(format: "%.6f", value)
     }
 }
